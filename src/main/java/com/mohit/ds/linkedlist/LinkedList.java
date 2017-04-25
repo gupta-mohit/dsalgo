@@ -1,4 +1,4 @@
-package com.mohit.linkedlist;
+package com.mohit.ds.linkedlist;
 
 class Node{
 	int item;
