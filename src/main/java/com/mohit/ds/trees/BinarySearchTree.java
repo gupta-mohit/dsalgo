@@ -191,7 +191,7 @@ public class BinarySearchTree {
 
 
 	/*
-	 * Searching in binary tree
+	 * Searching in binary search tree
 	 * order of complexity is O(n) worst case
 	 * In case of a balanced tree , order of complexity is o(log n)
 	 */
@@ -214,6 +214,19 @@ public class BinarySearchTree {
 	 * Size of binary tree is total number of nodes
 	 */
 
+	int size(Node root){
+		
+		if (root==null) return 0;
+		int leftSize= size(root.left);
+		int rightSize=size(root.right);
+		
+		return leftSize+rightSize+1;
+		
+	}
+	/*
+	 * TO-DO height of binary tree
+	 */
+	
 	public static void main(String[] args) {
 		BinarySearchTree bst =new BinarySearchTree();
 
@@ -237,6 +250,7 @@ public class BinarySearchTree {
 		bst2.printPostorder();
 
 		System.out.println(bst.search(bst.root, 11).toString());
+		System.out.println(bst.size(bst.root));
 
 	}
 
