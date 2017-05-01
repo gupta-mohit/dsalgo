@@ -2,7 +2,19 @@ package com.mohit.ds.queues;
 
 import com.mohit.ds.queues.exception.QueueEmptyException;
 import com.mohit.ds.queues.exception.QueueFullException;
-
+/*
+ * Q: What if circular array gets filled?
+ * A : Either we deny the operation stating that queue is full or we 
+ * take another large array , copy whole elements in O(n) time complexity and proceed.
+ * 
+ * Q:What are order of complexity of different operations in circularArrayQueue?
+ * A: its O(1)
+ * 
+ * TO-DO - implement Circullar array using linked list 
+ * https://www.youtube.com/watch?v=A5_XdiK4J8A
+ * 
+ * 
+ */
 public class CircularArrayQueue implements Queue{
     
     private static final int capacity = 5;
