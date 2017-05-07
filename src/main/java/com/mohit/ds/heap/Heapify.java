@@ -1,7 +1,11 @@
 package com.mohit.ds.heap;
 
 public class Heapify {
-	// 16 14 10 8 7 9 3 2 4 1
+	//Heap - search 0(log n)
+	//Heap - search 0(log n)
+	//Heap hight of tree 0 (log n) 
+	
+	// soln: 16 14 10 8 7 9 3 2 4 1
 
 	    public static int[] Arr = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
 	    public static int counter = 0;
